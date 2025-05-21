@@ -74,8 +74,18 @@ body {
 .img{
     border-radius: 1rem;
     margin-bottom: 2rem;
+    position: relative;
 }
-
+.img:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+.img--view{
+    position: absolute;
+    /* background-color: var(--Cyan-400); */
+    left: 48.8%;
+    top: 34%;
+}
 .card--heading{
     font-size: 2.6rem;
     color: var(--White);
@@ -127,4 +137,18 @@ body {
 }
 .author--name{
     color: var(--White);
+}
+
+@media screen and (max-width: 360px) {
+    .nft-card{
+        padding: 1.8rem;
+    }
+
+    .card--heading{
+        font-size: 2rem;
+    }
+
+    .card--description{
+        font-size: 1.4rem;
+    }
 }
