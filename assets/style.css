@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root{
+    /* Colors */
+    /* Primary */
+     --Blue-500: hsl(215, 51%, 70%);
+     --Cyan-400: hsl(178, 100%, 50%);
+     /* Neutral */
+     --Blue-950-bg: hsl(217, 54%, 11%);
+     --Blue-900-card-bg: hsl(216, 50%, 16%);
+     --Blue-800-line: hsl(215, 32%, 27%);
+     --White: hsl(0, 0%, 100%);
+    /* Font Families */
+    --font-Poppins: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-Poppins);
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container{
+    background-color: var(--Blue-950-bg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nft-card{
+    max-width: 34rem;
+    background-color: var(--Blue-900-card-bg);
+    padding: 2.4rem;
+    border-radius: 1rem;
+}
+
+.img{
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card--heading{
+    font-size: 2.6rem;
+    color: var(--White);
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+.card--description{
+    font-size: 1.7rem;
+    color: var(--Blue-500);
+    margin-bottom: 2.4rem;
+}
+.eth-value{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.eth{
+    font-size: 1.6rem;
+    color: var(--Cyan-400);
+}
+.time--left{
+    font-size: 1.6rem;
+    color: var(--Blue-500);
+}
+.border{
+    border: 1px solid var(--Blue-800-line);
+    margin-bottom: 2rem;
+}
+.author{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.author--img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+.author--about{
+    font-size: 1.4rem;
+    color: var(--Blue-500);
+}
+.author--name{
+    color: var(--White);
+}
